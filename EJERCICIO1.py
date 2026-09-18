@@ -50,17 +50,44 @@ print("tittle:", titulo.strip().title())
 
 #Ver elementos de la lista (he transformado la variable nombres del ejercicio anterior)
 lista_animes = nombres.split(", ")
-print(lista_animes)
+print("lista:", lista_animes)
 
 #Añadir elemento a la lista
 lista_animes.append(" Fullmetal_Archemist")
-print(lista_animes)
-print(lista_animes[2])
+print("elemento añadido:", lista_animes)
+print("selección de elemento:", lista_animes[2])
 
 #Eliminar elemento
 lista_animes.remove("Re_Zero")
-print(lista_animes)
+print("elemento borrado:", lista_animes)
 
 #Actualizar un elemento
 lista_animes[2] = "BNH"
-print(lista_animes)
+print("lista actualizada:",lista_animes)
+
+
+
+#-----        ------
+#-----PUNTO 7º------
+#-----        ------
+
+
+#OPERADORES COMPARATIVOS
+total_animes = len(lista_animes)
+print("¿la lista tiene más de 3 elementos?:", total_animes >3)
+print("¿la lista tiene menos de 3 elementos?:", total_animes <3)
+
+
+#OPERADORES LÓGICOS
+favoritos = ("Naruto" in lista_animes) and ("black_clover" in lista_animes)
+print("¿están en favoritos?:", favoritos)
+
+taquilla = ("Dragon_Ball " in lista_animes) or ("One_Piece" in lista_animes)
+print("¿están en taquilla alguno de los dos?:", taquilla)
+
+
+#OPERADOREES ARITMÉTICOS
+nuevos_animes = ["Pokemon_Horizontes ", "Digimon_BreakBeat"]
+lista_completa = lista_animes + nuevos_animes
+
+print("lista completa:", lista_completa)
